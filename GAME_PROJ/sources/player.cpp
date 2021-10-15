@@ -1,16 +1,19 @@
 #include "../headers/player.h"
 #include "../headers/field.h"
 
+Player::Player()
+{
+	initView();
+}
+
 void Player::move_left(Field& field)
 {
 	if(get_posx() != 0 && field.get_cell(get_posx()-1, get_posy()).get_passable())
 	{
 		//std::cout << "GO LEFT";
 		field.get_cell(get_posx(), get_posy()).clear_player();
-		field.get_cell(get_posx(), get_posy()).set_display('*');
 		field.get_cell(get_posx()-1, get_posy()).set_player(*this);
 		set_posx(get_posx()-1);
-		field.get_cell(get_posx(), get_posy()).set_display('3');
 	}	
 }
 
@@ -20,10 +23,8 @@ void Player::move_right(Field& field)
 	{
 		//std::cout << "GO RIGHT";
 		field.get_cell(get_posx(), get_posy()).clear_player();
-		field.get_cell(get_posx(), get_posy()).set_display('*');
 		field.get_cell(get_posx()+1, get_posy()).set_player(*this);
 		set_posx(get_posx()+1);
-		field.get_cell(get_posx(), get_posy()).set_display('3');
 	}	
 }
 
@@ -33,11 +34,9 @@ void Player::move_up(Field& field)
 	{
 		//std::cout << "GO UP";
 		field.get_cell(get_posx(), get_posy()).clear_player();
-		field.get_cell(get_posx(), get_posy()).set_display('*');
 		field.get_cell(get_posx(), get_posy()-1).set_player(*this);
 		set_posy(get_posy()-1);
 		std::cout << get_posy();
-		field.get_cell(get_posx(), get_posy()).set_display('3');
 	}	
 }
 
@@ -47,10 +46,8 @@ void Player::move_down(Field& field)
 	{
 		//std::cout << "GO DOWN";
 		field.get_cell(get_posx(), get_posy()).clear_player();
-		field.get_cell(get_posx(), get_posy()).set_display('*');
 		field.get_cell(get_posx(), get_posy()+1).set_player(*this);
 		set_posy(get_posy()+1);
-		field.get_cell(get_posx(), get_posy()).set_display('3');
 		std::cout << get_posy();
 	}
 }
@@ -70,6 +67,22 @@ void Player::init_fight(EnemyInterface* enemy, Field field)
 		//std::cout << "IM Player INIT" << std::endl;
 		enemy->set_health(enemy->get_health()-damage);
 	}
+}
+
+bool Player::check_for_death(Field& field)
+{
+	if(health<0)
+	{
+		field.get_cell(pos_x, pos_y).set_passable(true);
+		return true;
+	}
+	else
+		return false;
+}
+
+void Player::initView()
+{
+	cv = new CellObjectView('3', *this);
 }
 
 
@@ -92,6 +105,5 @@ void Player::set_health(float health) { this->health = health; }
 int Player::get_range() { return range; }
 
 void Player::set_range(int range) { this->range = range; }  
-
 
 

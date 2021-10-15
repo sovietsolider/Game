@@ -63,5 +63,15 @@
   "directory": "/home/greenjoker/GAME_PROJ/build",
   "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/GAME_PROJ.dir/sources/objectRange.cpp.o -c /home/greenjoker/GAME_PROJ/sources/objectRange.cpp",
   "file": "/home/greenjoker/GAME_PROJ/sources/objectRange.cpp"
+},
+{
+  "directory": "/home/greenjoker/GAME_PROJ/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/GAME_PROJ.dir/sources/cellView.cpp.o -c /home/greenjoker/GAME_PROJ/sources/cellView.cpp",
+  "file": "/home/greenjoker/GAME_PROJ/sources/cellView.cpp"
+},
+{
+  "directory": "/home/greenjoker/GAME_PROJ/build",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/GAME_PROJ.dir/sources/cellObjectView.cpp.o -c /home/greenjoker/GAME_PROJ/sources/cellObjectView.cpp",
+  "file": "/home/greenjoker/GAME_PROJ/sources/cellObjectView.cpp"
 }
 ]

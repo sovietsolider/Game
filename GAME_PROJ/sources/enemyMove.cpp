@@ -2,7 +2,12 @@
 #include "../headers/cell.h"
 #include "../headers/field.h"
 
-bool EnemyMove::seePlayer(Player player)
+EnemyMove::EnemyMove()
+{
+	initView();
+}
+
+bool EnemyMove::seePlayer(Player& player)
 {
 	if(std::abs(player.get_posx()-pos_x) <=range && std::abs(player.get_posy()-pos_y) <= range)
 		return true;
@@ -24,7 +29,6 @@ void EnemyMove::check_for_death(Field& field, std::vector <EnemyInterface*>& ene
 	{
 		field.get_cell(pos_x, pos_y).clear_enemy();
 		field.get_cell(pos_x, pos_y).set_passable(true);
-		field.get_cell(pos_x, pos_y).set_display('*');
 		enemies.erase(enemies.begin() + i);
 	}
 }
@@ -35,7 +39,6 @@ void EnemyMove::add_enemy(Cell& holder)
 	pos_x = holder.get_x();
 	pos_y = holder.get_y();
 	holder.set_passable(false);
-	holder.set_display('%');
 }
 
 void EnemyMove::move_left(Player& player, Field& field)
@@ -50,10 +53,8 @@ void EnemyMove::move_left(Player& player, Field& field)
 		//std::cout << "GO LEFT";
 		field.get_cell(pos_x, pos_y).clear_enemy();
 		field.get_cell(pos_x, pos_y).set_passable(true);
-		field.get_cell(pos_x, pos_y).set_display('*');
 		field.get_cell(pos_x-1, pos_y).set_enemy(*this);
 		pos_x--;
-		field.get_cell(pos_x, pos_y).set_display('%');
 		field.get_cell(pos_x, pos_y).set_passable(false);
 }
 
@@ -69,10 +70,8 @@ void EnemyMove::move_right(Player& player, Field& field)
 		//std::cout << "GO RIGHT";
 		field.get_cell(pos_x, pos_y).clear_enemy();
 		field.get_cell(pos_x, pos_y).set_passable(true);
-		field.get_cell(pos_x, pos_y).set_display('*');
 		field.get_cell(pos_x+1, pos_y).set_enemy(*this);
 		pos_x++;
-		field.get_cell(pos_x, pos_y).set_display('%');
 		field.get_cell(pos_x, pos_y).set_passable(false);	
 }
 
@@ -88,10 +87,8 @@ void EnemyMove::move_up(Player& player, Field& field)
 		//std::cout << "GO UP";
 		field.get_cell(pos_x, pos_y).clear_enemy();
 		field.get_cell(pos_x, pos_y).set_passable(true);
-		field.get_cell(pos_x, pos_y).set_display('*');
 		field.get_cell(pos_x, pos_y-1).set_enemy(*this);
 		pos_y--;
-		field.get_cell(pos_x, pos_y).set_display('%');
 		field.get_cell(pos_x, pos_y).set_passable(false);		
 }
 
@@ -107,10 +104,8 @@ void EnemyMove::move_down(Player& player, Field& field)
 		//std::cout << "GO DOWN";
 		field.get_cell(pos_x, pos_y).clear_enemy();
 		field.get_cell(pos_x, pos_y).set_passable(true);
-		field.get_cell(pos_x, pos_y).set_display('*');
 		field.get_cell(pos_x, pos_y+1).set_enemy(*this);
 		pos_y++;
-		field.get_cell(pos_x, pos_y).set_display('%');
 		field.get_cell(pos_x, pos_y).set_passable(false);		
 }
 
@@ -138,6 +133,11 @@ void EnemyMove::move(Player& player, Field& field)
 	else if(move_dir == Down)
 		move_down(player, field);
 	count_of_move++;
+}
+
+void EnemyMove::initView()
+{
+	cv = new CellObjectView('%', *this);
 }
 
 

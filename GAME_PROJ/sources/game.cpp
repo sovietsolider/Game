@@ -34,12 +34,11 @@ void Game::clear_screen()
 void Game::onStart()
 {
 	//main logic
-
 	clear_terminal_icanon();
 	int input;
 	Field field(20, 20); Player player;
 	std::vector< EnemyInterface* > enemy_container;
-	std::vector< CellObject* > objects_container;
+	std::vector< Object* > objects_container;
 	enemy_container.push_back(new EnemyBoss);          //ПРОВЕРИТЬ НА УТЕЧКУ ПАМЯТИ
 	enemy_container.push_back(new EnemyStand);
 	enemy_container.push_back(new EnemyMove);
@@ -61,6 +60,8 @@ void Game::onStart()
 	//clear_screen();
 	while(true)
 	{
+		if(player.check_for_death(field))
+			return;
 		if(field.get_cell(player.get_posx(), player.get_posy()).get_exit())
 			return;
 		std::cout << player.get_health() << std::endl;
@@ -80,8 +81,12 @@ void Game::onStart()
 			for(int i=0; i<enemy_container.size(); i++)
 				player.init_fight(enemy_container.at(i), field);
 		}
+		
 		for(int i=0; i<objects_container.size();i++)
-			objects_container.at(i)->onPass(player);
+		{
+			objects_container.at(i)->onPass(player, field);
+			objects_container.at(i)->check_for_death(field, objects_container, i);
+		}
 		for(int i=0;i<enemy_container.size();i++)
 		{
 			enemy_container.at(i)->init_fight(player, field);

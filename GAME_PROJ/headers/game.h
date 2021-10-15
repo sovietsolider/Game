@@ -12,6 +12,7 @@
 #include "objectHeal.h"
 #include "objectDamage.h"
 #include "objectRange.h"
+#include "object.h"
 
 class Game
 {

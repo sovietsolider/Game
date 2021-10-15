@@ -3,6 +3,7 @@
 #include "cell.h"
 #include <random>
 #include <tuple>
+#include "object.h"
 //#include "enemyInterface.h"
 
 class EnemyInterface;
@@ -37,7 +38,7 @@ public:
     bool check_for_enemies(int x, int y);
 
     Cell& generate_objects();
-    void put_object(std::vector<CellObject*>objects_container);
+    void put_object(std::vector<Object*>objects_container);
     bool check_for_objects(int x, int y);
 
 };

@@ -238,7 +238,7 @@ bool Field::check_for_objects(int x, int y)
     || field[y-1][x+1].get_has_enemy() || field[y-1][x-1].get_has_enemy());
 }
 
-void Field::put_object(std::vector<CellObject*>object_container)
+void Field::put_object(std::vector<Object*>object_container)
 {
     for(int i =0; i<object_container.size(); i++)
     {

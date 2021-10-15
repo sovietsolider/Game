@@ -8,9 +8,10 @@ class EnemyStand : public EnemyInterface
 {
 	private:
 		int health = 100, damage;
-		int pos_x = 0, pos_y = 0, range = 2;
+		int pos_x = 0, pos_y = 0, range = 1;
 	public:
-		virtual bool seePlayer(Player player);
+		EnemyStand();
+		virtual bool seePlayer(Player& player);
 		virtual void init_fight(Player& player, Field& field);
 		virtual void add_enemy(Cell& holder);
 		virtual void move(Player& player, Field& field);
@@ -21,6 +22,8 @@ class EnemyStand : public EnemyInterface
 
 		int get_health();
 		void set_health(int health);
+
+		virtual void initView();
 };
 
 

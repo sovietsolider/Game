@@ -177,6 +177,60 @@ sources/cellObject.cpp.s:
 	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/cellObject.cpp.s
 .PHONY : sources/cellObject.cpp.s
 
+sources/cellObjectView.o: sources/cellObjectView.cpp.o
+
+.PHONY : sources/cellObjectView.o
+
+# target to build an object file
+sources/cellObjectView.cpp.o:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/cellObjectView.cpp.o
+.PHONY : sources/cellObjectView.cpp.o
+
+sources/cellObjectView.i: sources/cellObjectView.cpp.i
+
+.PHONY : sources/cellObjectView.i
+
+# target to preprocess a source file
+sources/cellObjectView.cpp.i:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/cellObjectView.cpp.i
+.PHONY : sources/cellObjectView.cpp.i
+
+sources/cellObjectView.s: sources/cellObjectView.cpp.s
+
+.PHONY : sources/cellObjectView.s
+
+# target to generate assembly for a file
+sources/cellObjectView.cpp.s:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/cellObjectView.cpp.s
+.PHONY : sources/cellObjectView.cpp.s
+
+sources/cellView.o: sources/cellView.cpp.o
+
+.PHONY : sources/cellView.o
+
+# target to build an object file
+sources/cellView.cpp.o:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/cellView.cpp.o
+.PHONY : sources/cellView.cpp.o
+
+sources/cellView.i: sources/cellView.cpp.i
+
+.PHONY : sources/cellView.i
+
+# target to preprocess a source file
+sources/cellView.cpp.i:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/cellView.cpp.i
+.PHONY : sources/cellView.cpp.i
+
+sources/cellView.s: sources/cellView.cpp.s
+
+.PHONY : sources/cellView.s
+
+# target to generate assembly for a file
+sources/cellView.cpp.s:
+	$(MAKE) -f CMakeFiles/GAME_PROJ.dir/build.make CMakeFiles/GAME_PROJ.dir/sources/cellView.cpp.s
+.PHONY : sources/cellView.cpp.s
+
 sources/enemyBoss.o: sources/enemyBoss.cpp.o
 
 .PHONY : sources/enemyBoss.o
@@ -489,6 +543,12 @@ help:
 	@echo "... sources/cellObject.o"
 	@echo "... sources/cellObject.i"
 	@echo "... sources/cellObject.s"
+	@echo "... sources/cellObjectView.o"
+	@echo "... sources/cellObjectView.i"
+	@echo "... sources/cellObjectView.s"
+	@echo "... sources/cellView.o"
+	@echo "... sources/cellView.i"
+	@echo "... sources/cellView.s"
 	@echo "... sources/enemyBoss.o"
 	@echo "... sources/enemyBoss.i"
 	@echo "... sources/enemyBoss.s"

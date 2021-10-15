@@ -4,55 +4,85 @@
 CMakeFiles/GAME_PROJ.dir/sources/cell.cpp.o
  /home/greenjoker/GAME_PROJ/headers/cell.h
  /home/greenjoker/GAME_PROJ/headers/cellObject.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/headers/cellView.h
  /home/greenjoker/GAME_PROJ/headers/enemyInterface.h
  /home/greenjoker/GAME_PROJ/headers/player.h
  /home/greenjoker/GAME_PROJ/sources/cell.cpp
 CMakeFiles/GAME_PROJ.dir/sources/cellObject.cpp.o
  /home/greenjoker/GAME_PROJ/headers/cellObject.h
- /home/greenjoker/GAME_PROJ/headers/player.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
  /home/greenjoker/GAME_PROJ/sources/cellObject.cpp
+CMakeFiles/GAME_PROJ.dir/sources/cellObjectView.cpp.o
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/sources/cellObjectView.cpp
+CMakeFiles/GAME_PROJ.dir/sources/cellView.cpp.o
+ /home/greenjoker/GAME_PROJ/headers/cell.h
+ /home/greenjoker/GAME_PROJ/headers/cellObject.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/headers/cellView.h
+ /home/greenjoker/GAME_PROJ/headers/enemyInterface.h
+ /home/greenjoker/GAME_PROJ/headers/player.h
+ /home/greenjoker/GAME_PROJ/sources/cellView.cpp
 CMakeFiles/GAME_PROJ.dir/sources/enemyBoss.cpp.o
  /home/greenjoker/GAME_PROJ/headers/cell.h
  /home/greenjoker/GAME_PROJ/headers/cellObject.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/headers/cellView.h
  /home/greenjoker/GAME_PROJ/headers/enemyBoss.h
  /home/greenjoker/GAME_PROJ/headers/enemyInterface.h
  /home/greenjoker/GAME_PROJ/headers/field.h
+ /home/greenjoker/GAME_PROJ/headers/object.h
  /home/greenjoker/GAME_PROJ/headers/player.h
  /home/greenjoker/GAME_PROJ/sources/enemyBoss.cpp
 CMakeFiles/GAME_PROJ.dir/sources/enemyMove.cpp.o
  /home/greenjoker/GAME_PROJ/headers/cell.h
  /home/greenjoker/GAME_PROJ/headers/cellObject.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/headers/cellView.h
  /home/greenjoker/GAME_PROJ/headers/enemyInterface.h
  /home/greenjoker/GAME_PROJ/headers/enemyMove.h
  /home/greenjoker/GAME_PROJ/headers/field.h
+ /home/greenjoker/GAME_PROJ/headers/object.h
  /home/greenjoker/GAME_PROJ/headers/player.h
  /home/greenjoker/GAME_PROJ/sources/enemyMove.cpp
 CMakeFiles/GAME_PROJ.dir/sources/enemyStand.cpp.o
  /home/greenjoker/GAME_PROJ/headers/cell.h
  /home/greenjoker/GAME_PROJ/headers/cellObject.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/headers/cellView.h
  /home/greenjoker/GAME_PROJ/headers/enemyInterface.h
  /home/greenjoker/GAME_PROJ/headers/enemyStand.h
  /home/greenjoker/GAME_PROJ/headers/field.h
+ /home/greenjoker/GAME_PROJ/headers/object.h
  /home/greenjoker/GAME_PROJ/headers/player.h
  /home/greenjoker/GAME_PROJ/sources/enemyStand.cpp
 CMakeFiles/GAME_PROJ.dir/sources/field.cpp.o
  /home/greenjoker/GAME_PROJ/headers/cell.h
  /home/greenjoker/GAME_PROJ/headers/cellObject.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/headers/cellView.h
  /home/greenjoker/GAME_PROJ/headers/enemyInterface.h
  /home/greenjoker/GAME_PROJ/headers/field.h
+ /home/greenjoker/GAME_PROJ/headers/object.h
  /home/greenjoker/GAME_PROJ/headers/player.h
  /home/greenjoker/GAME_PROJ/sources/field.cpp
 CMakeFiles/GAME_PROJ.dir/sources/field_view.cpp.o
  /home/greenjoker/GAME_PROJ/headers/cell.h
  /home/greenjoker/GAME_PROJ/headers/cellObject.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/headers/cellView.h
  /home/greenjoker/GAME_PROJ/headers/enemyInterface.h
  /home/greenjoker/GAME_PROJ/headers/field.h
  /home/greenjoker/GAME_PROJ/headers/field_view.h
+ /home/greenjoker/GAME_PROJ/headers/object.h
  /home/greenjoker/GAME_PROJ/headers/player.h
  /home/greenjoker/GAME_PROJ/sources/field_view.cpp
 CMakeFiles/GAME_PROJ.dir/sources/game.cpp.o
  /home/greenjoker/GAME_PROJ/headers/cell.h
  /home/greenjoker/GAME_PROJ/headers/cellObject.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/headers/cellView.h
  /home/greenjoker/GAME_PROJ/headers/enemyBoss.h
  /home/greenjoker/GAME_PROJ/headers/enemyInterface.h
  /home/greenjoker/GAME_PROJ/headers/enemyMove.h
@@ -60,6 +90,7 @@ CMakeFiles/GAME_PROJ.dir/sources/game.cpp.o
  /home/greenjoker/GAME_PROJ/headers/field.h
  /home/greenjoker/GAME_PROJ/headers/field_view.h
  /home/greenjoker/GAME_PROJ/headers/game.h
+ /home/greenjoker/GAME_PROJ/headers/object.h
  /home/greenjoker/GAME_PROJ/headers/objectDamage.h
  /home/greenjoker/GAME_PROJ/headers/objectHeal.h
  /home/greenjoker/GAME_PROJ/headers/objectRange.h
@@ -68,6 +99,8 @@ CMakeFiles/GAME_PROJ.dir/sources/game.cpp.o
 CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o
  /home/greenjoker/GAME_PROJ/headers/cell.h
  /home/greenjoker/GAME_PROJ/headers/cellObject.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/headers/cellView.h
  /home/greenjoker/GAME_PROJ/headers/enemyBoss.h
  /home/greenjoker/GAME_PROJ/headers/enemyInterface.h
  /home/greenjoker/GAME_PROJ/headers/enemyMove.h
@@ -75,6 +108,7 @@ CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o
  /home/greenjoker/GAME_PROJ/headers/field.h
  /home/greenjoker/GAME_PROJ/headers/field_view.h
  /home/greenjoker/GAME_PROJ/headers/game.h
+ /home/greenjoker/GAME_PROJ/headers/object.h
  /home/greenjoker/GAME_PROJ/headers/objectDamage.h
  /home/greenjoker/GAME_PROJ/headers/objectHeal.h
  /home/greenjoker/GAME_PROJ/headers/objectRange.h
@@ -83,21 +117,33 @@ CMakeFiles/GAME_PROJ.dir/sources/main.cpp.o
 CMakeFiles/GAME_PROJ.dir/sources/objectDamage.cpp.o
  /home/greenjoker/GAME_PROJ/headers/cell.h
  /home/greenjoker/GAME_PROJ/headers/cellObject.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/headers/cellView.h
  /home/greenjoker/GAME_PROJ/headers/enemyInterface.h
+ /home/greenjoker/GAME_PROJ/headers/field.h
+ /home/greenjoker/GAME_PROJ/headers/object.h
  /home/greenjoker/GAME_PROJ/headers/objectDamage.h
  /home/greenjoker/GAME_PROJ/headers/player.h
  /home/greenjoker/GAME_PROJ/sources/objectDamage.cpp
 CMakeFiles/GAME_PROJ.dir/sources/objectHeal.cpp.o
  /home/greenjoker/GAME_PROJ/headers/cell.h
  /home/greenjoker/GAME_PROJ/headers/cellObject.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/headers/cellView.h
  /home/greenjoker/GAME_PROJ/headers/enemyInterface.h
+ /home/greenjoker/GAME_PROJ/headers/field.h
+ /home/greenjoker/GAME_PROJ/headers/object.h
  /home/greenjoker/GAME_PROJ/headers/objectHeal.h
  /home/greenjoker/GAME_PROJ/headers/player.h
  /home/greenjoker/GAME_PROJ/sources/objectHeal.cpp
 CMakeFiles/GAME_PROJ.dir/sources/objectRange.cpp.o
  /home/greenjoker/GAME_PROJ/headers/cell.h
  /home/greenjoker/GAME_PROJ/headers/cellObject.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/headers/cellView.h
  /home/greenjoker/GAME_PROJ/headers/enemyInterface.h
+ /home/greenjoker/GAME_PROJ/headers/field.h
+ /home/greenjoker/GAME_PROJ/headers/object.h
  /home/greenjoker/GAME_PROJ/headers/objectHeal.h
  /home/greenjoker/GAME_PROJ/headers/objectRange.h
  /home/greenjoker/GAME_PROJ/headers/player.h
@@ -105,7 +151,10 @@ CMakeFiles/GAME_PROJ.dir/sources/objectRange.cpp.o
 CMakeFiles/GAME_PROJ.dir/sources/player.cpp.o
  /home/greenjoker/GAME_PROJ/headers/cell.h
  /home/greenjoker/GAME_PROJ/headers/cellObject.h
+ /home/greenjoker/GAME_PROJ/headers/cellObjectView.h
+ /home/greenjoker/GAME_PROJ/headers/cellView.h
  /home/greenjoker/GAME_PROJ/headers/enemyInterface.h
  /home/greenjoker/GAME_PROJ/headers/field.h
+ /home/greenjoker/GAME_PROJ/headers/object.h
  /home/greenjoker/GAME_PROJ/headers/player.h
  /home/greenjoker/GAME_PROJ/sources/player.cpp

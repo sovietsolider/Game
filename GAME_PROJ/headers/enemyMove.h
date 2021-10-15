@@ -3,7 +3,6 @@
 #include "enemyInterface.h"
 #include <iostream>
 
-
 class EnemyMove : public EnemyInterface
 {
 	private:
@@ -16,7 +15,8 @@ class EnemyMove : public EnemyInterface
 		};
 		dir move_dir = Left;
 	public:
-		virtual bool seePlayer(Player player);
+		EnemyMove();
+		virtual bool seePlayer(Player& player);
 		virtual void init_fight(Player& player, Field& field);
 		virtual void add_enemy(Cell& holder);
 		virtual void move(Player& player, Field& field);
@@ -32,6 +32,7 @@ class EnemyMove : public EnemyInterface
 		int get_health();
 		void set_health(int health);
 
+		virtual void initView();
 };
 
 

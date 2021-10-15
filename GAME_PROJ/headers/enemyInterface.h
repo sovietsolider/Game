@@ -3,13 +3,14 @@
 #include "player.h"
 #include <iostream>
 #include <vector>
+#include "cellObject.h"
 
 class Field; class Cell;
 
-class EnemyInterface
+class EnemyInterface : public CellObject
 {
 	public:
-		virtual bool seePlayer(Player player) = 0;
+		virtual bool seePlayer(Player& player) = 0;
 		virtual void init_fight(Player& player, Field& field) = 0;
 		virtual void add_enemy(Cell& holder) = 0;
 		virtual void move(Player& player, Field& field) = 0;

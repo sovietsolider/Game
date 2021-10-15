@@ -16,7 +16,8 @@ class EnemyBoss : public EnemyInterface
 		};
 		dir move_dir = Left;
 	public:
-		virtual bool seePlayer(Player player);
+		EnemyBoss();
+		virtual bool seePlayer(Player& player);
 		virtual void init_fight(Player& player, Field& field);
 		virtual void add_enemy(Cell& holder);
 		virtual void move(Player& player, Field& field);
@@ -31,6 +32,8 @@ class EnemyBoss : public EnemyInterface
 
 		int get_health();
 		void set_health(int health);
+
+		virtual void initView();
 };
 
 

@@ -1,15 +1,16 @@
 #ifndef CELLOBJECT_H
 #define CELLOBJECT_H
-#include "player.h"
+#include "cellObjectView.h"
 
-class Cell;
+class Cell; class Player; class Field;
 
 class CellObject
 {
 	public:
-		virtual void addObject(Cell& holder) = 0;
-		virtual void onPass(Player& player) = 0;
-
+		virtual void initView() = 0;
+		virtual CellObjectView& getView();
+	protected:
+		CellObjectView* cv;
 };
 
 #endif // CELLOBJECT_H

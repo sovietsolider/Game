@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/GAME_PROJ.dir/sources/cell.cpp.o"
   "CMakeFiles/GAME_PROJ.dir/sources/cellObject.cpp.o"
+  "CMakeFiles/GAME_PROJ.dir/sources/cellObjectView.cpp.o"
+  "CMakeFiles/GAME_PROJ.dir/sources/cellView.cpp.o"
   "CMakeFiles/GAME_PROJ.dir/sources/enemyBoss.cpp.o"
   "CMakeFiles/GAME_PROJ.dir/sources/enemyMove.cpp.o"
   "CMakeFiles/GAME_PROJ.dir/sources/enemyStand.cpp.o"
