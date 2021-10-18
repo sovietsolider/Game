@@ -17,5 +17,7 @@ char CellView::get_disp_char() const
 		return 'E';
 	else if(owner.get_entrance())
 		return 'O';
+	else if(owner.isWall())
+		return '@';
 	return disp_char;
 }

@@ -55,3 +55,7 @@ bool Cell::get_has_enemy() { return enemy; }
 
 bool Cell::get_has_player() { return player; }
 
+bool Cell::isWall() { return wall; }
+
+void Cell::set_isWall(bool state) { wall = state; }
+

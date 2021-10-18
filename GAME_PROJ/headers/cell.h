@@ -15,7 +15,7 @@ private:
     CellObject* player = nullptr;
     CellView* cv;
     bool passable = 1;
-    bool exit = 0, entrance = 0;
+    bool exit = 0, entrance = 0, wall = 0;
     char display = '*';
     int x = 0, y = 0;
 protected:
@@ -54,6 +54,9 @@ public:
 
     void set_y(int y);
     int get_y();
+
+    void set_isWall(bool state);
+    bool isWall();
 
     
     

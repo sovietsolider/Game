@@ -82,11 +82,12 @@ void Field::generate_field()
             {
                 field[i][j].set_passable(0);
                 field[i][j].set_display('@');
+                field[i][j].set_isWall(true);
             }
             else
             {
-                field[i][0].set_passable(0);field[i][0].set_display('@');
-                field[i][size_x-1].set_passable(0);field[i][size_x-1].set_display('@');
+                field[i][0].set_passable(0);field[i][0].set_display('@'); field[i][0].set_isWall(true);
+                field[i][size_x-1].set_passable(0);field[i][size_x-1].set_display('@'); field[i][size_x-1].set_isWall(true);
             }
         }
     }
